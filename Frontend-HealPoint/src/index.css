@@ -46,6 +46,12 @@
   background-color: var(--color-secondary-dark);
 }
 
+
+
 .active hr {
   @apply block
+}
+
+::-webkit-scrollbar{
+  @apply hidden
 }
