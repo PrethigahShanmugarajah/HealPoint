@@ -16,7 +16,9 @@ const Header = () => {
         </div>
 
         <a href="#speciality" className="flex items-center gap-2 bg-white px-8 py-3 rounded-full text-gray-600 text-sm m-auto md:m-0 hover:scale-105 transition-all duration-300">
-          Book Appointment <img className="w-3" src={assets.arrow_icon} alt="" />
+          Book Appointment 
+          <i className="bi bi-arrow-right w-3 text-gray-600"></i>
+
         </a>
 
       </div>
@@ -25,8 +27,27 @@ const Header = () => {
       <div className="md:w-1/2 relative">
         <img className="w-full md:absolute bottom-0 h-auto rounded-lg" src={assets.Header_Image} alt="" />
       </div>
+
     </div>
   );
 };
 
 export default Header;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{/*-------- <i class="bi bi-arrow-right"></i> --------*/}

@@ -9,26 +9,51 @@ import menu_icon from "./menu_icon.svg";
 import cross_icon from "./cross_icon.png";
 import chats_icon from "./chats_icon.svg";
 import verified_icon from "./verified_icon.svg";
-import arrow_icon from "./arrow_icon.svg";
 import info_icon from "./info_icon.svg";
 import upload_icon from "./upload_icon.png";
 import stripe_logo from "./stripe_logo.png";
 import razorpay_logo from "./razorpay_logo.png";
-import doc1 from "./doc1.png";
-import doc2 from "./doc2.png";
-import doc3 from "./doc3.png";
-import doc4 from "./doc4.png";
-import doc5 from "./doc5.png";
-import doc6 from "./doc6.png";
-import doc7 from "./doc7.png";
-import doc8 from "./doc8.png";
-import doc9 from "./doc9.png";
-import doc10 from "./doc10.png";
-import doc11 from "./doc11.png";
-import doc12 from "./doc12.png";
-import doc13 from "./doc13.png";
-import doc14 from "./doc14.png";
-import doc15 from "./doc15.png";
+
+import Doctor_1 from "./Doctor_1.png";
+import Doctor_2 from "./Doctor_2.png";
+import Doctor_3 from "./Doctor_3.png";
+import Doctor_4 from "./Doctor_4.png";
+import Doctor_5 from "./Doctor_5.png";
+import Doctor_6 from "./Doctor_6.png";
+import Doctor_7 from "./Doctor_7.png";
+import Doctor_8 from "./Doctor_8.png";
+import Doctor_9 from "./Doctor_9.png";
+import Doctor_10 from "./Doctor_10.png";
+import Doctor_11 from "./Doctor_11.png";
+import Doctor_12 from "./Doctor_12.png";
+import Doctor_13 from "./Doctor_13.png";
+import Doctor_14 from "./Doctor_14.png";
+import Doctor_15 from "./Doctor_15.png";
+import Doctor_16 from "./Doctor_16.png";
+import Doctor_17 from "./Doctor_17.png";
+import Doctor_18 from "./Doctor_18.png";
+import Doctor_19 from "./Doctor_19.png";
+import Doctor_20 from "./Doctor_20.png";
+import Doctor_21 from "./Doctor_21.png";
+import Doctor_22 from "./Doctor_22.png";
+import Doctor_23 from "./Doctor_23.png";
+import Doctor_24 from "./Doctor_24.png";
+import Doctor_25 from "./Doctor_25.png";
+import Doctor_26 from "./Doctor_26.png";
+import Doctor_27 from "./Doctor_27.png";
+import Doctor_28 from "./Doctor_28.png";
+import Doctor_29 from "./Doctor_29.png";
+import Doctor_30 from "./Doctor_30.png";
+import Doctor_31 from "./Doctor_31.png";
+import Doctor_32 from "./Doctor_32.png";
+import Doctor_33 from "./Doctor_33.png";
+import Doctor_34 from "./Doctor_34.png";
+import Doctor_35 from "./Doctor_35.png";
+import Doctor_36 from "./Doctor_36.png";
+import Doctor_37 from "./Doctor_37.png";
+import Doctor_38 from "./Doctor_38.png";
+import Doctor_39 from "./Doctor_39.png";
+import Doctor_40 from "./Doctor_40.png";
 
 import Dermatologist from "./Dermatologist.png";
 import Gastroenterologist from "./Gastroenterologist.png";
@@ -50,7 +75,6 @@ export const assets = {
   verified_icon,
   info_icon,
   Profile_Picture,
-  arrow_icon,
   contact_image,
   about_image,
   menu_icon,
@@ -94,239 +118,658 @@ export const specialityData = [
     image: OrthopedicSurgeon,
   },
   {
-     speciality: "Dentist",
-    image: Dentist
+    speciality: "Dentist",
+    image: Dentist,
   },
-   { 
-    speciality: "Psychiatrist", 
-     image: Psychiatrist 
-   },
+  {
+    speciality: "Psychiatrist",
+    image: Psychiatrist,
+  },
 ];
 
 export const doctors = [
   {
-    _id: "doc1",
-    name: "Dr. Richard James",
-    image: doc1,
-    speciality: "General physician",
+    _id: 1,
+    name: "Dr. Anjali Venkatesan",
+    image: Doctor_1,
+    gender: "female-tamil",
+    speciality: "Pediatrician",
     degree: "MBBS",
-    experience: "4 Years",
+    experience: "7 years",
     about:
-      "Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.",
-    fees: 50,
+      "Dr. Anjali Venkatesan is a dedicated pediatrician with experience in treating children of all ages.",
+    fees: 1500,
     address: {
-      line1: "17th Cross, Richmond",
-      line2: "Circle, Ring Road, London",
+      line1:
+        "No. 5, Kovil Lane, Main Street, Nallur, Jaffna, Northern Province, Sri Lanka",
+      line2: "Nallur, Jaffna, Northern Province, Sri Lanka",
     },
   },
   {
-    _id: "doc2",
-    name: "Dr. Emily Larson",
-    image: doc2,
+    _id: 2,
+    name: "Dr. Pradeep Fernando",
+    image: Doctor_2,
+    gender: "male-sinhala",
+    speciality: "Gastroenterologist",
+    degree: "MD",
+    experience: "10 years",
+    about:
+      "Dr. Pradeep Fernando specializes in digestive system disorders, providing expert care in gastrointestinal issues.",
+    fees: 1800,
+    address: {
+      line1: "No. 7, Galle Road, Colombo, Western Province, Sri Lanka",
+      line2: "Colombo, Western Province, Sri Lanka",
+    },
+  },
+  {
+    _id: 3,
+    name: "Dr. Malini Rajasingham",
+    image: Doctor_3,
+    gender: "female-tamil",
     speciality: "Gynecologist",
-    degree: "MBBS",
-    experience: "3 Years",
+    degree: "MD",
+    experience: "12 years",
     about:
-      "Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.",
-    fees: 60,
+      "Dr. Malini Rajasingham is a trusted gynecologist, offering expert care in women's health.",
+    fees: 2200,
     address: {
-      line1: "27th Cross, Richmond",
-      line2: "Circle, Ring Road, London",
+      line1: "No. 14, Palali Road, Jaffna, Northern Province, Sri Lanka",
+      line2: "Jaffna, Northern Province, Sri Lanka",
     },
   },
   {
-    _id: "doc3",
-    name: "Dr. Sarah Patel",
-    image: doc3,
+    _id: 4,
+    name: "Dr. Rohan Silva",
+    image: Doctor_4,
+    gender: "male-sinhala",
+    speciality: "Cardiologist",
+    degree: "MBBS, MD",
+    experience: "15 years",
+    about:
+      "Dr. Rohan Silva specializes in heart-related conditions and provides comprehensive cardiovascular care.",
+    fees: 2500,
+    address: {
+      line1: "No. 10, Lake Drive, Kandy, Central Province, Sri Lanka",
+      line2: "Kandy, Central Province, Sri Lanka",
+    },
+  },
+  {
+    _id: 5,
+    name: "Dr. Shankar Pillai",
+    image: Doctor_5,
+    gender: "male-tamil",
+    speciality: "Neurologist",
+    degree: "MD",
+    experience: "8 years",
+    about:
+      "Dr. Shankar Pillai is an expert in treating neurological disorders, providing personalized treatment plans.",
+    fees: 2000,
+    address: {
+      line1: "No. 3, Temple Road, Batticaloa, Eastern Province, Sri Lanka",
+      line2: "Batticaloa, Eastern Province, Sri Lanka",
+    },
+  },
+  {
+    _id: 6,
+    name: "Dr. Nadeesha Perera",
+    image: Doctor_6,
+    gender: "female-sinhala",
     speciality: "Dermatologist",
     degree: "MBBS",
-    experience: "1 Years",
+    experience: "6 years",
     about:
-      "Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.",
-    fees: 30,
+      "Dr. Nadeesha Perera offers specialized care in skin conditions, from acne to eczema.",
+    fees: 1700,
     address: {
-      line1: "37th Cross, Richmond",
-      line2: "Circle, Ring Road, London",
+      line1: "No. 22, Wewala Road, Galle, Southern Province, Sri Lanka",
+      line2: "Galle, Southern Province, Sri Lanka",
     },
   },
   {
-    _id: "doc4",
-    name: "Dr. Christopher Lee",
-    image: doc4,
-    speciality: "Pediatricians",
+    _id: 7,
+    name: "Dr. Kanchana Arachchige",
+    image: Doctor_7,
+    gender: "female-sinhala",
+    speciality: "Dermatologist",
+    degree: "MD",
+    experience: "9 years",
+    about:
+      "Dr. Kanchana Arachchige is a dermatologist specializing in cosmetic dermatology.",
+    fees: 2100,
+    address: {
+      line1: "No. 18, Kingsbury Road, Colombo, Western Province, Sri Lanka",
+      line2: "Colombo, Western Province, Sri Lanka",
+    },
+  },
+  {
+    _id: 8,
+    name: "Dr. Rajeshwaran Jeyaraj",
+    image: Doctor_8,
+    gender: "male-tamil",
+    speciality: "Orthopedic Surgeon",
     degree: "MBBS",
-    experience: "2 Years",
+    experience: "10 years",
     about:
-      "Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.",
-    fees: 40,
+      "Dr. Rajeshwaran Jeyaraj specializes in treating bone fractures and joint issues.",
+    fees: 2600,
     address: {
-      line1: "47th Cross, Richmond",
-      line2: "Circle, Ring Road, London",
+      line1: "No. 13, Kovil Road, Trincomalee, Eastern Province, Sri Lanka",
+      line2: "Trincomalee, Eastern Province, Sri Lanka",
     },
   },
   {
-    _id: "doc5",
-    name: "Dr. Jennifer Garcia",
-    image: doc5,
-    speciality: "Neurologist",
+    _id: 9,
+    name: "Dr. Dharmendra Jayasinghe",
+    image: Doctor_9,
+    gender: "male-sinhala",
+    speciality: "Pediatrician",
     degree: "MBBS",
-    experience: "4 Years",
+    experience: "5 years",
     about:
-      "Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.",
-    fees: 50,
+      "Dr. Dharmendra Jayasinghe specializes in the care of newborns and children.",
+    fees: 1400,
     address: {
-      line1: "57th Cross, Richmond",
-      line2: "Circle, Ring Road, London",
+      line1: "No. 11, Chapel Road, Kandy, Central Province, Sri Lanka",
+      line2: "Kandy, Central Province, Sri Lanka",
     },
   },
   {
-    _id: "doc6",
-    name: "Dr. Andrew Williams",
-    image: doc6,
-    speciality: "Neurologist",
-    degree: "MBBS",
-    experience: "4 Years",
+    _id: 10,
+    name: "Dr. Roshani Seneviratne",
+    image: Doctor_10,
+    gender: "female-sinhala",
+    speciality: "Cardiologist",
+    degree: "MD",
+    experience: "14 years",
     about:
-      "Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.",
-    fees: 50,
+      "Dr. Roshani Seneviratne is a leading cardiologist with expertise in heart disease prevention.",
+    fees: 2500,
     address: {
-      line1: "57th Cross, Richmond",
-      line2: "Circle, Ring Road, London",
+      line1: "No. 6, Sunflower Road, Colombo, Western Province, Sri Lanka",
+      line2: "Colombo, Western Province, Sri Lanka",
     },
   },
   {
-    _id: "doc7",
-    name: "Dr. Christopher Davis",
-    image: doc7,
-    speciality: "General physician",
-    degree: "MBBS",
-    experience: "4 Years",
+    _id: 11,
+    name: "Dr. Sanjana Thirukumaran",
+    image: Doctor_11,
+    gender: "female-tamil",
+    speciality: "Dentist",
+    degree: "BDS",
+    experience: "8 years",
     about:
-      "Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.",
-    fees: 50,
+      "Dr. Sanjana Thirukumaran offers comprehensive dental care including cleanings, fillings, and cosmetic dentistry.",
+    fees: 1800,
     address: {
-      line1: "17th Cross, Richmond",
-      line2: "Circle, Ring Road, London",
+      line1:
+        "No. 21, Railway Station Road, Kilinochchi, Northern Province, Sri Lanka",
+      line2: "Kilinochchi, Northern Province, Sri Lanka",
     },
   },
   {
-    _id: "doc8",
-    name: "Dr. Timothy White",
-    image: doc8,
-    speciality: "Gynecologist",
-    degree: "MBBS",
-    experience: "3 Years",
-    about:
-      "Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.",
-    fees: 60,
-    address: {
-      line1: "27th Cross, Richmond",
-      line2: "Circle, Ring Road, London",
-    },
-  },
-  {
-    _id: "doc9",
-    name: "Dr. Ava Mitchell",
-    image: doc9,
+    _id: 12,
+    name: "Dr. Ashoka Dissanayake",
+    image: Doctor_12,
+    gender: "male-sinhala",
     speciality: "Dermatologist",
     degree: "MBBS",
-    experience: "1 Years",
+    experience: "6 years",
     about:
-      "Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.",
-    fees: 30,
+      "Dr. Ashoka Dissanayake is an expert in treating various skin conditions.",
+    fees: 2000,
     address: {
-      line1: "37th Cross, Richmond",
-      line2: "Circle, Ring Road, London",
+      line1: "No. 16, Galle Road, Matara, Southern Province, Sri Lanka",
+      line2: "Matara, Southern Province, Sri Lanka",
     },
   },
   {
-    _id: "doc10",
-    name: "Dr. Jeffrey King",
-    image: doc10,
-    speciality: "Pediatricians",
-    degree: "MBBS",
-    experience: "2 Years",
+    _id: 13,
+    name: "Dr. Nirmala Arunachalam",
+    image: Doctor_13,
+    gender: "female-tamil",
+    speciality: "Gastroenterologist",
+    degree: "MD",
+    experience: "10 years",
     about:
-      "Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.",
-    fees: 40,
+      "Dr. Nirmala Arunachalam specializes in digestive diseases, offering treatments for a variety of gastrointestinal disorders.",
+    fees: 1900,
     address: {
-      line1: "47th Cross, Richmond",
-      line2: "Circle, Ring Road, London",
+      line1: "No. 3, Kandy Road, Batticaloa, Eastern Province, Sri Lanka",
+      line2: "Batticaloa, Eastern Province, Sri Lanka",
     },
   },
   {
-    _id: "doc11",
-    name: "Dr. Zoe Kelly",
-    image: doc11,
-    speciality: "Neurologist",
-    degree: "MBBS",
-    experience: "4 Years",
-    about:
-      "Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.",
-    fees: 50,
-    address: {
-      line1: "57th Cross, Richmond",
-      line2: "Circle, Ring Road, London",
-    },
-  },
-  {
-    _id: "doc12",
-    name: "Dr. Patrick Harris",
-    image: doc12,
-    speciality: "Neurologist",
-    degree: "MBBS",
-    experience: "4 Years",
-    about:
-      "Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.",
-    fees: 50,
-    address: {
-      line1: "57th Cross, Richmond",
-      line2: "Circle, Ring Road, London",
-    },
-  },
-  {
-    _id: "doc13",
-    name: "Dr. Chloe Evans",
-    image: doc13,
-    speciality: "General physician",
-    degree: "MBBS",
-    experience: "4 Years",
-    about:
-      "Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.",
-    fees: 50,
-    address: {
-      line1: "17th Cross, Richmond",
-      line2: "Circle, Ring Road, London",
-    },
-  },
-  {
-    _id: "doc14",
-    name: "Dr. Ryan Martinez",
-    image: doc14,
+    _id: 14,
+    name: "Dr. Kamalika Fernando",
+    image: Doctor_14,
+    gender: "female-sinhala",
     speciality: "Gynecologist",
-    degree: "MBBS",
-    experience: "3 Years",
+    degree: "MD",
+    experience: "13 years",
     about:
-      "Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.",
-    fees: 60,
+      "Dr. Kamalika Fernando is a highly experienced gynecologist focusing on reproductive health.",
+    fees: 2200,
     address: {
-      line1: "27th Cross, Richmond",
-      line2: "Circle, Ring Road, London",
+      line1: "No. 8, Kurunegala Road, Kandy, Central Province, Sri Lanka",
+      line2: "Kandy, Central Province, Sri Lanka",
     },
   },
   {
-    _id: "doc15",
-    name: "Dr. Amelia Hill",
-    image: doc15,
+    _id: 15,
+    name: "Dr. Nalin Perera",
+    image: Doctor_15,
+    gender: "male-sinhala",
+    speciality: "Dentist",
+    degree: "BDS",
+    experience: "9 years",
+    about:
+      "Dr. Nalin Perera offers advanced dental treatments, from general checkups to cosmetic procedures.",
+    fees: 1600,
+    address: {
+      line1: "No. 5, Galle Road, Colombo, Western Province, Sri Lanka",
+      line2: "Colombo, Western Province, Sri Lanka",
+    },
+  },
+  {
+    _id: 16,
+    name: "Dr. Amara Rajasingham",
+    image: Doctor_16,
+    gender: "female-tamil",
+    speciality: "Psychiatrist",
+    degree: "MD",
+    experience: "12 years",
+    about:
+      "Dr. Amara Rajasingham offers counseling and psychiatric services for mental health disorders.",
+    fees: 2300,
+    address: {
+      line1: "No. 7, Main Street, Jaffna, Northern Province, Sri Lanka",
+      line2: "Jaffna, Northern Province, Sri Lanka",
+    },
+  },
+  {
+    _id: 17,
+    name: "Dr. Prasanna Wickramasinghe",
+    image: Doctor_17,
+    gender: "male-sinhala",
+    speciality: "General Physician",
+    degree: "MBBS",
+    experience: "10 years",
+    about:
+      "Dr. Prasanna Wickramasinghe provides primary health care, managing general health issues and chronic diseases.",
+    fees: 1500,
+    address: {
+      line1: "No. 14, Galle Road, Colombo, Western Province, Sri Lanka",
+      line2: "Colombo, Western Province, Sri Lanka",
+    },
+  },
+  {
+    _id: 18,
+    name: "Dr. Sangeetha Shanmugam",
+    image: Doctor_18,
+    gender: "female-tamil",
+    speciality: "Neurologist",
+    degree: "MD",
+    experience: "9 years",
+    about:
+      "Dr. Sangeetha Shanmugam specializes in neurological diseases, providing innovative treatment methods.",
+    fees: 2200,
+    address: {
+      line1: "No. 4, Jaffna Road, Kilinochchi, Northern Province, Sri Lanka",
+      line2: "Kilinochchi, Northern Province, Sri Lanka",
+    },
+  },
+  {
+    _id: 19,
+    name: "Dr. Bimal Perera",
+    image: Doctor_19,
+    gender: "male-sinhala",
+    speciality: "Gynecologist",
+    degree: "MD",
+    experience: "11 years",
+    about:
+      "Dr. Bimal Perera offers expert care for women's reproductive health, including treatments for gynecological disorders.",
+    fees: 2400,
+    address: {
+      line1: "No. 11, Kandy Road, Galle, Southern Province, Sri Lanka",
+      line2: "Galle, Southern Province, Sri Lanka",
+    },
+  },
+  {
+    _id: 20,
+    name: "Dr. Keerthika Sathasivam",
+    image: Doctor_20,
+    gender: "female-tamil",
+    speciality: "Pediatrician",
+    degree: "MBBS",
+    experience: "6 years",
+    about:
+      "Dr. Keerthika Sathasivam specializes in children's health care, from newborn care to adolescent health.",
+    fees: 1600,
+    address: {
+      line1: "No. 5, Trincomalee Road, Jaffna, Northern Province, Sri Lanka",
+      line2: "Jaffna, Northern Province, Sri Lanka",
+    },
+  },
+  {
+    _id: 21,
+    name: "Dr. Kanishka Samarasinghe",
+    image: Doctor_21,
+    gender: "male-sinhala",
+    speciality: "Neurologist",
+    degree: "MD",
+    experience: "8 years",
+    about:
+      "Dr. Kanishka Samarasinghe is an expert in treating neurological disorders including seizures and strokes.",
+    fees: 2100,
+    address: {
+      line1: "No. 3, Galle Road, Kandy, Central Province, Sri Lanka",
+      line2: "Kandy, Central Province, Sri Lanka",
+    },
+  },
+  {
+    _id: 22,
+    name: "Dr. Niranjala Rajendran",
+    image: Doctor_22,
+    gender: "female-tamil",
+    speciality: "Orthopedic Surgeon",
+    degree: "MBBS",
+    experience: "7 years",
+    about:
+      "Dr. Niranjala Rajendran is a skilled orthopedic surgeon specializing in bone fractures and sports injuries.",
+    fees: 2400,
+    address: {
+      line1: "No. 4, Chunnakam Road, Jaffna, Northern Province, Sri Lanka",
+      line2: "Jaffna, Northern Province, Sri Lanka",
+    },
+  },
+  {
+    _id: 23,
+    name: "Dr. Chatura De Silva",
+    image: Doctor_23,
+    gender: "male-sinhala",
+    speciality: "Psychiatrist",
+    degree: "MD",
+    experience: "14 years",
+    about:
+      "Dr. Chatura De Silva specializes in treating patients with depression, anxiety, and other mental health conditions.",
+    fees: 2200,
+    address: {
+      line1: "No. 7, Colombo Road, Kandy, Central Province, Sri Lanka",
+      line2: "Kandy, Central Province, Sri Lanka",
+    },
+  },
+  {
+    _id: 24,
+    name: "Dr. Suba Sundaram",
+    image: Doctor_24,
+    gender: "female-tamil",
+    speciality: "Gastroenterologist",
+    degree: "MD",
+    experience: "10 years",
+    about:
+      "Dr. Suba Sundaram is an expert in treating gastrointestinal disorders, offering both medical and surgical options.",
+    fees: 2000,
+    address: {
+      line1: "No. 9, Sea View Road, Trincomalee, Eastern Province, Sri Lanka",
+      line2: "Trincomalee, Eastern Province, Sri Lanka",
+    },
+  },
+  {
+    _id: 25,
+    name: "Dr. Nishanthi Gunawardena",
+    image: Doctor_25,
+    gender: "female-sinhala",
     speciality: "Dermatologist",
     degree: "MBBS",
-    experience: "1 Years",
+    experience: "8 years",
     about:
-      "Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.",
-    fees: 30,
+      "Dr. Nishanthi Gunawardena treats a variety of skin conditions, specializing in acne and eczema treatments.",
+    fees: 1700,
     address: {
-      line1: "37th Cross, Richmond",
-      line2: "Circle, Ring Road, London",
+      line1: "No. 19, Lake Road, Colombo, Western Province, Sri Lanka",
+      line2: "Colombo, Western Province, Sri Lanka",
+    },
+  },
+  {
+    _id: 26,
+    name: "Dr. Maheshwaran Karunakaran",
+    image: Doctor_26,
+    gender: "male-tamil",
+    speciality: "Dentist",
+    degree: "BDS",
+    experience: "9 years",
+    about:
+      "Dr. Maheshwaran Karunakaran is a well-known dentist specializing in orthodontics and dental implants.",
+    fees: 1800,
+    address: {
+      line1: "No. 2, Manipay Road, Jaffna, Northern Province, Sri Lanka",
+      line2: "Jaffna, Northern Province, Sri Lanka",
+    },
+  },
+  {
+    _id: 27,
+    name: "Dr. Chamari Liyanage",
+    image: Doctor_27,
+    gender: "female-sinhala",
+    speciality: "Cardiologist",
+    degree: "MD",
+    experience: "13 years",
+    about:
+      "Dr. Chamari Liyanage specializes in diagnosing and treating heart conditions, including hypertension and cholesterol issues.",
+    fees: 2500,
+    address: {
+      line1: "No. 10, Main Street, Kandy, Central Province, Sri Lanka",
+      line2: "Kandy, Central Province, Sri Lanka",
+    },
+  },
+  {
+    _id: 28,
+    name: "Dr. Indra Venkatesh",
+    image: Doctor_28,
+    gender: "female-tamil",
+    speciality: "General Physician",
+    degree: "MBBS",
+    experience: "11 years",
+    about:
+      "Dr. Indra Venkatesh is a versatile general physician with expertise in a wide range of medical conditions.",
+    fees: 1800,
+    address: {
+      line1: "No. 5, Nallur Road, Jaffna, Northern Province, Sri Lanka",
+      line2: "Jaffna, Northern Province, Sri Lanka",
+    },
+  },
+  {
+    _id: 29,
+    name: "Dr. Ravi Shankar",
+    image: Doctor_29,
+    gender: "male-sinhala",
+    speciality: "Psychiatrist",
+    degree: "MD",
+    experience: "10 years",
+    about:
+      "Dr. Ravi Shankar treats patients suffering from various mental health issues like schizophrenia and bipolar disorder.",
+    fees: 2300,
+    address: {
+      line1: "No. 2, Galle Road, Matara, Southern Province, Sri Lanka",
+      line2: "Matara, Southern Province, Sri Lanka",
+    },
+  },
+  {
+    _id: 30,
+    name: "Dr. Nadeesha Perera",
+    image: Doctor_30,
+    gender: "female-sinhala",
+    speciality: "Gynecologist",
+    degree: "MD",
+    experience: "8 years",
+    about:
+      "Dr. Nadeesha Perera specializes in reproductive health and provides care for gynecological issues.",
+    fees: 2100,
+    address: {
+      line1: "No. 16, Colombo Road, Kandy, Central Province, Sri Lanka",
+      line2: "Kandy, Central Province, Sri Lanka",
+    },
+  },
+  {
+    _id: 31,
+    name: "Dr. Aravindan Thavapalan",
+    image: Doctor_31,
+    gender: "male-tamil",
+    speciality: "Neurologist",
+    degree: "MD",
+    experience: "10 years",
+    about:
+      "Dr. Aravindan Thavapalan is a neurologist specializing in treating disorders such as epilepsy and strokes.",
+    fees: 2300,
+    address: {
+      line1: "No. 7, Mannar Road, Jaffna, Northern Province, Sri Lanka",
+      line2: "Jaffna, Northern Province, Sri Lanka",
+    },
+  },
+  {
+    _id: 32,
+    name: "Dr. Kusalika Perera",
+    image: Doctor_32,
+    gender: "female-sinhala",
+    speciality: "Cardiologist",
+    degree: "MBBS, MD",
+    experience: "15 years",
+    about:
+      "Dr. Kusalika Perera is a leading cardiologist specializing in heart disease management.",
+    fees: 2600,
+    address: {
+      line1: "No. 8, Kelaniya Road, Colombo, Western Province, Sri Lanka",
+      line2: "Colombo, Western Province, Sri Lanka",
+    },
+  },
+  {
+    _id: 33,
+    name: "Dr. Chamari Perera",
+    image: Doctor_33,
+    gender: "female-sinhala",
+    speciality: "General Physician",
+    degree: "MBBS",
+    experience: "12 years",
+    about:
+      "Dr. Chamari Perera offers general health services and preventative care for chronic conditions.",
+    fees: 1900,
+    address: {
+      line1: "No. 4, Galle Road, Matara, Southern Province, Sri Lanka",
+      line2: "Matara, Southern Province, Sri Lanka",
+    },
+  },
+  {
+    _id: 34,
+    name: "Dr. Aravindan Rajendran",
+    image: Doctor_34,
+    gender: "male-tamil",
+    speciality: "Dermatologist",
+    degree: "MBBS",
+    experience: "7 years",
+    about:
+      "Dr. Aravindan Rajendran specializes in treating a wide range of skin issues from acne to skin cancers.",
+    fees: 2100,
+    address: {
+      line1: "No. 9, Palali Road, Jaffna, Northern Province, Sri Lanka",
+      line2: "Jaffna, Northern Province, Sri Lanka",
+    },
+  },
+  {
+    _id: 35,
+    name: "Dr. Sundar Kumar",
+    image: Doctor_35,
+    gender: "male-tamil",
+    speciality: "Orthopedic Surgeon",
+    degree: "MD",
+    experience: "13 years",
+    about:
+      "Dr. Sundar Kumar specializes in orthopedics, including joint replacements and sports injuries.",
+    fees: 2500,
+    address: {
+      line1:
+        "No. 14, Jaffna Road, Chavakachcheri, Northern Province, Sri Lanka",
+      line2: "Chavakachcheri, Northern Province, Sri Lanka",
+    },
+  },
+  {
+    _id: 36,
+    name: "Dr. Ruvini Wickramasinghe",
+    image: Doctor_36,
+    gender: "female-sinhala",
+    speciality: "Gastroenterologist",
+    degree: "MD",
+    experience: "11 years",
+    about:
+      "Dr. Ruvini Wickramasinghe offers expert treatment for gastrointestinal issues and digestive disorders.",
+    fees: 2200,
+    address: {
+      line1: "No. 7, Kandy Road, Colombo, Western Province, Sri Lanka",
+      line2: "Colombo, Western Province, Sri Lanka",
+    },
+  },
+  {
+    _id: 37,
+    name: "Dr. Kumaran Sathiyamoorthy",
+    image: Doctor_37,
+    gender: "male-tamil",
+    speciality: "Pediatrician",
+    degree: "MBBS",
+    experience: "9 years",
+    about:
+      "Dr. Kumaran Sathiyamoorthy specializes in pediatric care, particularly in immunization and child health.",
+    fees: 1600,
+    address: {
+      line1: "No. 3, Kandy Road, Nallur, Jaffna, Northern Province, Sri Lanka",
+      line2: "Nallur, Jaffna, Northern Province, Sri Lanka",
+    },
+  },
+  {
+    _id: 38,
+    name: "Dr. Dineshkanth Arulraj",
+    image: Doctor_38,
+    gender: "male-tamil",
+    speciality: "Dentist",
+    degree: "BDS",
+    experience: "8 years",
+    about:
+      "Dr. Dineshkanth Arulraj offers general and cosmetic dental care for all age groups.",
+    fees: 1800,
+    address: {
+      line1: "No. 15, Kayts Road, Jaffna, Northern Province, Sri Lanka",
+      line2: "Jaffna, Northern Province, Sri Lanka",
+    },
+  },
+  {
+    _id: 39,
+    name: "Dr. Vijayalakshmi Kumaran",
+    image: Doctor_39,
+    gender: "male-tamil",
+    speciality: "Psychiatrist",
+    degree: "MD",
+    experience: "10 years",
+    about:
+      "Dr. Vijayalakshmi Kumaran treats mental health disorders with psychotherapy and medication.",
+    fees: 2400,
+    address: {
+      line1: "No. 12, Kokuvil Road, Jaffna, Northern Province, Sri Lanka",
+      line2: "Jaffna, Northern Province, Sri Lanka",
+    },
+  },
+  {
+    _id: 40,
+    name: "Dr. Manikandan Ramasamy",
+    image: Doctor_40,
+    gender: "male-tamil",
+    speciality: "Orthopedic Surgeon",
+    degree: "MBBS",
+    experience: "12 years",
+    about:
+      "Dr. Manikandan Ramasamy specializes in bone fractures, spinal injuries, and joint replacements.",
+    fees: 2700,
+    address: {
+      line1:
+        "No. 21, Chavakachcheri Road, Jaffna, Northern Province, Sri Lanka",
+      line2: "Jaffna, Northern Province, Sri Lanka",
     },
   },
 ];
