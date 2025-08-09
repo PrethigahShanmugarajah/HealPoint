@@ -1,4 +1,4 @@
-import appointment_img from "./appointment_img.png";
+import Appointment_Image from "./Appointment_Image.png";
 import Header_Image from "./Header_Image.png";
 import Group_Profiles from "./Group_Profiles.png";
 import Profile_Picture from "./Profile_Picture.png";
@@ -67,7 +67,7 @@ import Dentist from "./Dentist.png";
 import Psychiatrist from "./Psychiatrist.png";
 
 export const assets = {
-  appointment_img,
+  Appointment_Image,
   Header_Image,
   Group_Profiles,
   Logo,
@@ -214,7 +214,7 @@ export const doctors = [
     name: "Dr. Nadeesha Perera",
     image: Doctor_6,
     gender: "female-sinhala",
-    speciality: "Dermatologist",
+    speciality: "General Physician",
     degree: "MBBS",
     experience: "6 years",
     about:
