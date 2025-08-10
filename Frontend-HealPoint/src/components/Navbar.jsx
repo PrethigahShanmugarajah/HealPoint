@@ -43,7 +43,6 @@ const Navbar = () => {
               alt="Profile Picture"
             />
 
-            {/* <img className="w-2.5" src={assets.dropdown_icon} alt="" /> */}
             <i className="bi bi-chevron-down w-2.5 inline-block text-black"></i>
             
             <div className="absolute top-0 right-0 pt-14 text-base font-medium text-gray-600 z-20 hidden group-hover:block">

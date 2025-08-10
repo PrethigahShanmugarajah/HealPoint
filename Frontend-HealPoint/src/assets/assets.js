@@ -8,8 +8,6 @@ import Logo from "./Logo.png";
 import menu_icon from "./menu_icon.svg";
 import cross_icon from "./cross_icon.png";
 import chats_icon from "./chats_icon.svg";
-import verified_icon from "./verified_icon.svg";
-import info_icon from "./info_icon.svg";
 import upload_icon from "./upload_icon.png";
 import stripe_logo from "./stripe_logo.png";
 import razorpay_logo from "./razorpay_logo.png";
@@ -72,8 +70,6 @@ export const assets = {
   Group_Profiles,
   Logo,
   chats_icon,
-  verified_icon,
-  info_icon,
   Profile_Picture,
   contact_image,
   about_image,
@@ -129,7 +125,7 @@ export const specialityData = [
 
 export const doctors = [
   {
-    _id: 1,
+    _id: "1",
     name: "Dr. Anjali Venkatesan",
     image: Doctor_1,
     gender: "female-tamil",
@@ -146,7 +142,7 @@ export const doctors = [
     },
   },
   {
-    _id: 2,
+    _id: "2",
     name: "Dr. Pradeep Fernando",
     image: Doctor_2,
     gender: "male-sinhala",
@@ -162,7 +158,7 @@ export const doctors = [
     },
   },
   {
-    _id: 3,
+    _id: "3",
     name: "Dr. Malini Rajasingham",
     image: Doctor_3,
     gender: "female-tamil",
@@ -178,7 +174,7 @@ export const doctors = [
     },
   },
   {
-    _id: 4,
+    _id: "4",
     name: "Dr. Rohan Silva",
     image: Doctor_4,
     gender: "male-sinhala",
@@ -194,7 +190,7 @@ export const doctors = [
     },
   },
   {
-    _id: 5,
+    _id: "5",
     name: "Dr. Shankar Pillai",
     image: Doctor_5,
     gender: "male-tamil",
@@ -210,7 +206,7 @@ export const doctors = [
     },
   },
   {
-    _id: 6,
+    _id: "6",
     name: "Dr. Nadeesha Perera",
     image: Doctor_6,
     gender: "female-sinhala",
@@ -226,7 +222,7 @@ export const doctors = [
     },
   },
   {
-    _id: 7,
+    _id: "7",
     name: "Dr. Kanchana Arachchige",
     image: Doctor_7,
     gender: "female-sinhala",
@@ -242,7 +238,7 @@ export const doctors = [
     },
   },
   {
-    _id: 8,
+    _id: "8",
     name: "Dr. Rajeshwaran Jeyaraj",
     image: Doctor_8,
     gender: "male-tamil",
@@ -258,7 +254,7 @@ export const doctors = [
     },
   },
   {
-    _id: 9,
+    _id: "9",
     name: "Dr. Dharmendra Jayasinghe",
     image: Doctor_9,
     gender: "male-sinhala",
@@ -274,7 +270,7 @@ export const doctors = [
     },
   },
   {
-    _id: 10,
+    _id: "10",
     name: "Dr. Roshani Seneviratne",
     image: Doctor_10,
     gender: "female-sinhala",
@@ -290,7 +286,7 @@ export const doctors = [
     },
   },
   {
-    _id: 11,
+    _id: "11",
     name: "Dr. Sanjana Thirukumaran",
     image: Doctor_11,
     gender: "female-tamil",
@@ -307,7 +303,7 @@ export const doctors = [
     },
   },
   {
-    _id: 12,
+    _id: "12",
     name: "Dr. Ashoka Dissanayake",
     image: Doctor_12,
     gender: "male-sinhala",
@@ -323,7 +319,7 @@ export const doctors = [
     },
   },
   {
-    _id: 13,
+    _id: "13",
     name: "Dr. Nirmala Arunachalam",
     image: Doctor_13,
     gender: "female-tamil",
@@ -339,7 +335,7 @@ export const doctors = [
     },
   },
   {
-    _id: 14,
+    _id: "14",
     name: "Dr. Kamalika Fernando",
     image: Doctor_14,
     gender: "female-sinhala",
@@ -355,7 +351,7 @@ export const doctors = [
     },
   },
   {
-    _id: 15,
+    _id: "15",
     name: "Dr. Nalin Perera",
     image: Doctor_15,
     gender: "male-sinhala",
@@ -371,7 +367,7 @@ export const doctors = [
     },
   },
   {
-    _id: 16,
+    _id: "16",
     name: "Dr. Amara Rajasingham",
     image: Doctor_16,
     gender: "female-tamil",
@@ -387,7 +383,7 @@ export const doctors = [
     },
   },
   {
-    _id: 17,
+    _id: "17",
     name: "Dr. Prasanna Wickramasinghe",
     image: Doctor_17,
     gender: "male-sinhala",
@@ -403,7 +399,7 @@ export const doctors = [
     },
   },
   {
-    _id: 18,
+    _id: "18",
     name: "Dr. Sangeetha Shanmugam",
     image: Doctor_18,
     gender: "female-tamil",
@@ -419,7 +415,7 @@ export const doctors = [
     },
   },
   {
-    _id: 19,
+    _id: "19",
     name: "Dr. Bimal Perera",
     image: Doctor_19,
     gender: "male-sinhala",
@@ -435,7 +431,7 @@ export const doctors = [
     },
   },
   {
-    _id: 20,
+    _id: "20",
     name: "Dr. Keerthika Sathasivam",
     image: Doctor_20,
     gender: "female-tamil",
@@ -451,7 +447,7 @@ export const doctors = [
     },
   },
   {
-    _id: 21,
+    _id: "21",
     name: "Dr. Kanishka Samarasinghe",
     image: Doctor_21,
     gender: "male-sinhala",
@@ -467,7 +463,7 @@ export const doctors = [
     },
   },
   {
-    _id: 22,
+    _id: "22",
     name: "Dr. Niranjala Rajendran",
     image: Doctor_22,
     gender: "female-tamil",
@@ -483,7 +479,7 @@ export const doctors = [
     },
   },
   {
-    _id: 23,
+    _id: "23",
     name: "Dr. Chatura De Silva",
     image: Doctor_23,
     gender: "male-sinhala",
@@ -499,7 +495,7 @@ export const doctors = [
     },
   },
   {
-    _id: 24,
+    _id: "24",
     name: "Dr. Suba Sundaram",
     image: Doctor_24,
     gender: "female-tamil",
@@ -515,7 +511,7 @@ export const doctors = [
     },
   },
   {
-    _id: 25,
+    _id: "25",
     name: "Dr. Nishanthi Gunawardena",
     image: Doctor_25,
     gender: "female-sinhala",
@@ -531,7 +527,7 @@ export const doctors = [
     },
   },
   {
-    _id: 26,
+    _id: "26",
     name: "Dr. Maheshwaran Karunakaran",
     image: Doctor_26,
     gender: "male-tamil",
@@ -547,7 +543,7 @@ export const doctors = [
     },
   },
   {
-    _id: 27,
+    _id: "27",
     name: "Dr. Chamari Liyanage",
     image: Doctor_27,
     gender: "female-sinhala",
@@ -563,7 +559,7 @@ export const doctors = [
     },
   },
   {
-    _id: 28,
+    _id: "28",
     name: "Dr. Indra Venkatesh",
     image: Doctor_28,
     gender: "female-tamil",
@@ -579,7 +575,7 @@ export const doctors = [
     },
   },
   {
-    _id: 29,
+    _id: "29",
     name: "Dr. Ravi Shankar",
     image: Doctor_29,
     gender: "male-sinhala",
@@ -595,7 +591,7 @@ export const doctors = [
     },
   },
   {
-    _id: 30,
+    _id: "30",
     name: "Dr. Nadeesha Perera",
     image: Doctor_30,
     gender: "female-sinhala",
@@ -611,7 +607,7 @@ export const doctors = [
     },
   },
   {
-    _id: 31,
+    _id: "31",
     name: "Dr. Aravindan Thavapalan",
     image: Doctor_31,
     gender: "male-tamil",
@@ -627,7 +623,7 @@ export const doctors = [
     },
   },
   {
-    _id: 32,
+    _id: "32",
     name: "Dr. Kusalika Perera",
     image: Doctor_32,
     gender: "female-sinhala",
@@ -643,7 +639,7 @@ export const doctors = [
     },
   },
   {
-    _id: 33,
+    _id: "33",
     name: "Dr. Chamari Perera",
     image: Doctor_33,
     gender: "female-sinhala",
@@ -659,7 +655,7 @@ export const doctors = [
     },
   },
   {
-    _id: 34,
+    _id: "34",
     name: "Dr. Aravindan Rajendran",
     image: Doctor_34,
     gender: "male-tamil",
@@ -675,7 +671,7 @@ export const doctors = [
     },
   },
   {
-    _id: 35,
+    _id: "35",
     name: "Dr. Sundar Kumar",
     image: Doctor_35,
     gender: "male-tamil",
@@ -692,7 +688,7 @@ export const doctors = [
     },
   },
   {
-    _id: 36,
+    _id: "36",
     name: "Dr. Ruvini Wickramasinghe",
     image: Doctor_36,
     gender: "female-sinhala",
@@ -708,7 +704,7 @@ export const doctors = [
     },
   },
   {
-    _id: 37,
+    _id: "37",
     name: "Dr. Kumaran Sathiyamoorthy",
     image: Doctor_37,
     gender: "male-tamil",
@@ -724,7 +720,7 @@ export const doctors = [
     },
   },
   {
-    _id: 38,
+    _id: "38",
     name: "Dr. Dineshkanth Arulraj",
     image: Doctor_38,
     gender: "male-tamil",
@@ -740,7 +736,7 @@ export const doctors = [
     },
   },
   {
-    _id: 39,
+    _id: "39",
     name: "Dr. Vijayalakshmi Kumaran",
     image: Doctor_39,
     gender: "male-tamil",
@@ -756,7 +752,7 @@ export const doctors = [
     },
   },
   {
-    _id: 40,
+    _id: "40",
     name: "Dr. Manikandan Ramasamy",
     image: Doctor_40,
     gender: "male-tamil",
