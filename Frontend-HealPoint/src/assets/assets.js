@@ -3,7 +3,7 @@ import Header_Image from "./Header_Image.png";
 import Group_Profiles from "./Group_Profiles.png";
 import Profile_Picture from "./Profile_Picture.png";
 import contact_image from "./contact_image.png";
-import about_image from "./about_image.png";
+import About_Image from "./About_Image.png";
 import Logo from "./Logo.png";
 import menu_icon from "./menu_icon.svg";
 import cross_icon from "./cross_icon.png";
@@ -72,7 +72,7 @@ export const assets = {
   chats_icon,
   Profile_Picture,
   contact_image,
-  about_image,
+  About_Image,
   menu_icon,
   cross_icon,
   upload_icon,

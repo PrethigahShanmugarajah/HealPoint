@@ -6,7 +6,8 @@
   font-family: "Outfit";
 }
 
-:root {
+:root
+{
   --color-primary: #EC4899;
   --color-primary-light: #F9A8D4;
 
@@ -19,13 +20,22 @@
   --color-text: #1F2937;
 }
 
-.bg-primary {
+.bg-primary
+{
   background-color: var(--color-primary);
 }
-.bg-secondary {
+
+.hover\:bg-primary:hover {
+  background-color: var(--color-primary);
+}
+
+.bg-secondary
+{
   background-color: var(--color-secondary);
 }
-.bg-accent {
+
+.bg-accent
+{
   background-color: var(--color-accent);
 }
 
