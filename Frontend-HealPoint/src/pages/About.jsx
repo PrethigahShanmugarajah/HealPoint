@@ -69,7 +69,6 @@ const About = () => {
           <p>Personalized alerts and guidance to maintain your wellness.</p>
         </div>
       </div>
-
     </div>
   );
 };

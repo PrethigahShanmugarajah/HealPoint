@@ -47,9 +47,7 @@ const Doctors = () => {
                 : navigate("/doctors/Gynecologist")
             }
             className={`w-[94vw] sm:w-auto pl-3 py-1.5 pr-16 border border-gray-300 rounded transition-all cursor-pointer ${
-              speciality === "Gynecologist" 
-              ? "bg-indigo-100 text-black" 
-              : ""
+              speciality === "Gynecologist" ? "bg-indigo-100 text-black" : ""
             }`}
           >
             Gynecologist
@@ -62,9 +60,7 @@ const Doctors = () => {
                 : navigate("/doctors/Dermatologist")
             }
             className={`w-[94vw] sm:w-auto pl-3 py-1.5 pr-16 border border-gray-300 rounded transition-all cursor-pointer  ${
-              speciality === "Dermatologist" 
-              ? "bg-indigo-100 text-black" 
-              : ""
+              speciality === "Dermatologist" ? "bg-indigo-100 text-black" : ""
             }`}
           >
             Dermatologist
@@ -77,9 +73,7 @@ const Doctors = () => {
                 : navigate("/doctors/Pediatrician")
             }
             className={`w-[94vw] sm:w-auto pl-3 py-1.5 pr-16 border border-gray-300 rounded transition-all cursor-pointer ${
-              speciality === "Pediatrician" 
-              ? "bg-indigo-100 text-black" 
-              : ""
+              speciality === "Pediatrician" ? "bg-indigo-100 text-black" : ""
             }`}
           >
             Pediatrician
@@ -92,9 +86,7 @@ const Doctors = () => {
                 : navigate("/doctors/Neurologist")
             }
             className={`w-[94vw] sm:w-auto pl-3 py-1.5 pr-16 border border-gray-300 rounded transition-all cursor-pointer ${
-              speciality === "Neurologist" 
-              ? "bg-indigo-100 text-black" 
-              : ""
+              speciality === "Neurologist" ? "bg-indigo-100 text-black" : ""
             }`}
           >
             Neurologist
@@ -122,9 +114,7 @@ const Doctors = () => {
                 : navigate("/doctors/Cardiologist")
             }
             className={`w-[94vw] sm:w-auto pl-3 py-1.5 pr-16 border border-gray-300 rounded transition-all cursor-pointer ${
-              speciality === "Cardiologist" 
-              ? "bg-indigo-100 text-black" 
-              : ""
+              speciality === "Cardiologist" ? "bg-indigo-100 text-black" : ""
             }`}
           >
             Cardiologist
@@ -152,9 +142,7 @@ const Doctors = () => {
                 : navigate("/doctors/Dentist")
             }
             className={`w-[94vw] sm:w-auto pl-3 py-1.5 pr-16 border border-gray-300 rounded transition-all cursor-pointer ${
-              speciality === "Dentist" 
-              ? "bg-indigo-100 text-black" 
-              : ""
+              speciality === "Dentist" ? "bg-indigo-100 text-black" : ""
             }`}
           >
             Dentist
@@ -167,9 +155,7 @@ const Doctors = () => {
                 : navigate("/doctors/Psychiatrist")
             }
             className={`w-[94vw] sm:w-auto pl-3 py-1.5 pr-16 border border-gray-300 rounded transition-all cursor-pointer ${
-              speciality === "Psychiatrist" 
-              ? "bg-indigo-100 text-black" 
-              : ""
+              speciality === "Psychiatrist" ? "bg-indigo-100 text-black" : ""
             }`}
           >
             Psychiatrist

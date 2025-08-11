@@ -10,7 +10,12 @@ const Navbar = () => {
 
   return (
     <div className="flex items-center justify-between text-sm py-4 mb-5 border-b border-b-gray-500">
-      <img onClick={() => navigate("/")} className="w-44 cursor-pointer" src={assets.Logo} alt="Logo" />
+      <img
+        onClick={() => navigate("/")}
+        className="w-44 cursor-pointer"
+        src={assets.Logo}
+        alt="Logo"
+      />
 
       <ul className="hidden md:flex items-start gap-5 font-medium">
         <NavLink to="/">
@@ -44,23 +49,36 @@ const Navbar = () => {
             />
 
             <i className="bi bi-chevron-down w-2.5 inline-block text-black"></i>
-            
+
             <div className="absolute top-0 right-0 pt-14 text-base font-medium text-gray-600 z-20 hidden group-hover:block">
               <div className="min-w-48 bg-stone-100 rounded flex flex-col gap-4 p-4">
-                <p onClick={()=>navigate('my-profile')} className="hover:text-black cursor-pointer">My Profile</p>
+                <p
+                  onClick={() => navigate("my-profile")}
+                  className="hover:text-black cursor-pointer"
+                >
+                  My Profile
+                </p>
 
-                <p onClick={()=>navigate('my-appointments')}  className="hover:text-black cursor-pointer">
+                <p
+                  onClick={() => navigate("my-appointments")}
+                  className="hover:text-black cursor-pointer"
+                >
                   My Appointments
                 </p>
 
-                <p onClick={()=>setToken(false)} className="hover:text-black cursor-pointer">Logout</p>
+                <p
+                  onClick={() => setToken(false)}
+                  className="hover:text-black cursor-pointer"
+                >
+                  Logout
+                </p>
               </div>
             </div>
           </div>
         ) : (
           <button
             onClick={() => navigate("/login")}
-            className="bg-primary text-white px-8 py-3 rounded-full font-light hidden md:block"
+            className="bg-primary text-white px-8 py-3 rounded-full font-light hidden md:block hover:cursor-pointer"
           >
             Create Account
           </button>
@@ -71,8 +89,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-
-
-{/*-------- <i class="bi bi-chevron-down"></i> --------*/}
-{/*-------- <i class="bi bi-person"></i> --------*/}

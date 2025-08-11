@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const MyAppoinments = () => {
-  return (
-    <div>MyAppoinments</div>
-  )
-}
+  return <div>MyAppoinments</div>;
+};
 
-export default MyAppoinments
+export default MyAppoinments;
