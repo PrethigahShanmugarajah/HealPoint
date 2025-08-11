@@ -77,3 +77,10 @@
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 1rem;
 }
+
+@media (max-width: 768px) {
+  .active p {
+    color: white;
+    background-color: var(--color-primary);
+  }
+}
