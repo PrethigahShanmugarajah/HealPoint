@@ -5,8 +5,6 @@ import Profile_Picture from "./Profile_Picture.png";
 import Contact_Image from "./Contact_Image.png";
 import About_Image from "./About_Image.png";
 import Logo from "./Logo.png";
-import menu_icon from "./menu_icon.svg";
-import cross_icon from "./cross_icon.png";
 import chats_icon from "./chats_icon.svg";
 import upload_icon from "./upload_icon.png";
 import stripe_logo from "./stripe_logo.png";
@@ -73,8 +71,6 @@ export const assets = {
   Profile_Picture,
   Contact_Image,
   About_Image,
-  menu_icon,
-  cross_icon,
   upload_icon,
   stripe_logo,
   razorpay_logo,

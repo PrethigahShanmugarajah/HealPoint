@@ -84,12 +84,10 @@ const Navbar = () => {
           </button>
         )}
 
-        <img
+        <i
           onClick={() => setShowMenu(true)}
-          className="w-6 md:hidden hover:cursor-pointer"
-          src={assets.menu_icon}
-          alt=""
-        />
+          className="bi bi-list text-3xl md:hidden hover:cursor-pointer"
+        ></i>
 
         {/*-------- Mobile Menu --------*/}
         <div
@@ -107,12 +105,11 @@ const Navbar = () => {
               src={assets.Logo}
               alt=""
             />
-            <img
-              className="w-7 hover:cursor-pointer"
+
+            <i
+              className="bi bi-x-lg w-7 hover:cursor-pointer text-xl"
               onClick={() => setShowMenu(false)}
-              src={assets.cross_icon}
-              alt=""
-            />
+            ></i>
           </div>
 
           <ul className="flex flex-col items-center gap-2 mt-5 px-5 text-lg font-medium">
