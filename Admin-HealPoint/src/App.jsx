@@ -1,12 +1,25 @@
-import React from 'react'
-import Login from './pages/Login'
+import React from "react";
+import Login from "./pages/Login";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { useContext } from "react";
+import { AdminContext } from "./context/AdminContext";
+import NavBar from "./components/NavBar";
 
 const App = () => {
-  return (
-    <div>
-      <Login/>
-    </div>
-  )
-}
+  const { aToken } = useContext(AdminContext);
 
-export default App
+  return aToken ? (
+    <div className="bg-[#F8F9FD]">
+      <ToastContainer />
+      <NavBar />
+    </div>
+  ) : (
+    <>
+      <Login />
+      <ToastContainer />
+    </>
+  );
+};
+
+export default App;
