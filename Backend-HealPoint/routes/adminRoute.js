@@ -1,9 +1,11 @@
 import express from 'express'
-import { addDoctor } from '../controllers/adminController.js'
+import { addDoctor, loginAdmin } from '../controllers/adminController.js'
 import upload from '../middlewares/multer.js'
+import authAdmin from '../middlewares/authAdmin.js'
 
-const adminRoute = express.Router()
+const adminRouter = express.Router()
 
-adminRoute.post('/add-doctor', upload.single('image'), addDoctor)
+adminRouter.post('/add-doctor', authAdmin,upload.single('image'), addDoctor)
+adminRouter.post('/login', loginAdmin)
 
-export default adminRoute
+export default adminRouter
