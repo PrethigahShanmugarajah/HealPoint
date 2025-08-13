@@ -26,7 +26,7 @@ const Login = () => {
           setAToken(data.token);
           console.log(data.token);
         } else {
-            toast.error(data.message);
+          toast.error(data.message);
         }
       } else {
       }

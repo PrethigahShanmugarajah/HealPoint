@@ -23,6 +23,23 @@
   background-color: var(--color-primary);
 }
 
+.border-primary {
+  border-color: var(--color-primary);
+}
+
+
+
+
+
+.border-secondary {
+  border-color: var(--color-secondary);
+}
+
+.border-accent {
+  border-color: var(--color-accent);
+}
+
+
 .bg-secondary
 {
   background-color: var(--color-secondary);
