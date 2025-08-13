@@ -133,7 +133,7 @@ export const doctors = [
     fees: 1500,
     address: {
       line1:
-        "No. 5, Kovil Lane, Main Street, Nallur, Jaffna, Northern Province, Sri Lanka",
+        "No. 5, Kovil Lane, Main Street",
       line2: "Nallur, Jaffna, Northern Province, Sri Lanka",
     },
   },
