@@ -42,7 +42,7 @@ const AddDoctor = () => {
         JSON.stringify({ line1: address1, line2: address2 })
       );
 
-      /*-------- Condole Log FormData --------*/
+      /*-------- Console Log FormData --------*/
       formData.forEach((value, key) => {
         console.log(`${key}: ${value}`);
       });
