@@ -138,8 +138,8 @@ const updateProfile = async (req, res) => {
 /*-------- API to book appointment --------*/
 const bookAppointment = async (req, res) => {
   try {
-    const { userId, docId, slotDate, slotTime } = req.body;
-    const docData = await doctorModel.findById(docId).select("-password");
+    const { userId, docId, slotDate, slotTime } = req.body
+    const docData = await doctorModel.findById(docId).select("-password")
 
     if (!docData.available) {
 
@@ -149,7 +149,7 @@ const bookAppointment = async (req, res) => {
       });
     }
 
-    let slots_booked = docData.slots_booked;
+    let slots_booked = docData.slots_booked 
 
 
     /*-------- Checking for Slot Availability --------*/
@@ -196,4 +196,18 @@ const bookAppointment = async (req, res) => {
   }
 };
 
-export { registerUser, loginUser, getProfile, updateProfile, bookAppointment };
+/*-------- API to get User Appointments for frontend my-appointments Page --------*/
+const listAppointment = async (req, res) => {
+  try {
+    const { userId } = req.body
+    const appointments = await appointmentModel.find({ userId })
+
+    res.json({ success: true, appointments });
+    
+  } catch (error) {
+    console.log(error);
+    res.json({ success: false, message: error.message });
+  }
+};
+
+export { registerUser, loginUser, getProfile, updateProfile, bookAppointment, listAppointment };

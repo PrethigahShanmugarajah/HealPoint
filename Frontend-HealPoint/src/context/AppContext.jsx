@@ -34,7 +34,7 @@ const AppContextProvider = (props) => {
         headers: { token },
       });
 
-      console.log("API Response:", data);
+      // console.log("API Response:", data);
 
       if (data.success) {
         console.log("Setting userData to:", data.userData);
