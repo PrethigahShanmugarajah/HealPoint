@@ -27,6 +27,10 @@ const Appointment = () => {
   const getAvailableSlots = async () => {
     setDocSlots([]);
 
+    // if (!docInfo || !docInfo.slots_booked) {
+    //   return;
+    // }
+
     /*-------- Getting Current Date --------*/
     let today = new Date();
 
