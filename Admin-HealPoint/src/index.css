@@ -42,6 +42,11 @@
   @apply hidden
 }
 
+.text-primary-light {
+  color: var(--color-primary-light);
+}
+
+
 
 
 

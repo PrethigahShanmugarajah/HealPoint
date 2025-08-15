@@ -9,6 +9,7 @@ import DoctorContextProvider from "./context/DoctorContext.jsx";
 import AppContextProvider from "./context/AppContext.jsx";
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
+
 createRoot(document.getElementById("root")).render(
   <BrowserRouter>
     <AdminContextProvider>
