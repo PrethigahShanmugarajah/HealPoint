@@ -37,7 +37,7 @@ const AppContextProvider = (props) => {
       // console.log("API Response:", data);
 
       if (data.success) {
-        console.log("Setting userData to:", data.userData);
+        // console.log("Setting userData to:", data.userData);
         setUserData(data.userData);
       } else {
         toast.error(data.message);

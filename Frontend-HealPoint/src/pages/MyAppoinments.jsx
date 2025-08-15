@@ -63,9 +63,22 @@ const MyAppoinments = () => {
         getUserAppointments();
         getDoctorsData();
         console.log(data.message);
-      } else {
-      }
+      } 
       console.log(appointmentId);
+    } catch (error) {
+      console.log(error);
+      toast.error(error.message);
+    }
+  };
+
+  const appointmentStripe = async (appointmentId) => {
+    try {
+      const { data } = await axios.post(backendUrl+'/api/user/payment-stripe', { appointmentId }, { headers: { token } });
+
+      if (data.success) {
+        initPay(data.order)
+        console.log(data.order)
+      }
     } catch (error) {
       console.log(error);
       toast.error(error.message);
@@ -117,7 +130,10 @@ const MyAppoinments = () => {
 
             <div className="flex flex-col gap-2 justify-end">
               {!item.cancelled && (
-                <button className="text-sm text-stone-500 text-center sm:min-w-48 py-2 border rounded hover:bg-primary hover:text-white transition-all duration-300 hover:cursor-pointer">
+                <button
+                  onClick={() => appointmentStripe(item._id)}
+                  className="text-sm text-stone-500 text-center sm:min-w-48 py-2 border rounded hover:bg-primary hover:text-white transition-all duration-300 hover:cursor-pointer"
+                >
                   Pay Online
                 </button>
               )}

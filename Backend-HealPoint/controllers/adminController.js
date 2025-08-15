@@ -4,6 +4,7 @@ import { v2 as cloudinary } from "cloudinary";
 import doctorModel from "../models/doctorModel.js";
 import jwt from "jsonwebtoken";
 import { response } from "express";
+import appointmentModel from "../models/appoinmentModel.js";
 
 /*-------- API for Adding Doctor --------*/
 const addDoctor = async (req, res) => {
@@ -111,7 +112,7 @@ const loginAdmin = async (req, res) => {
 /*-------- API to get doctors list for admin panel --------*/
 const allDoctors = async (req, res) => {
   try {
-    const doctors = await doctorModel.find({}).select('-password')
+    const doctors = await doctorModel.find({}).select("-password");
     res.json({ success: true, doctors });
   } catch (error) {
     console.error(error);
@@ -119,4 +120,46 @@ const allDoctors = async (req, res) => {
   }
 };
 
-export { addDoctor, loginAdmin, allDoctors };
+/*-------- API to get all appointments list --------*/
+const appointmentsAdmin = async (req, res) => {
+  try {
+    const appointmentsAdmin = await appointmentModel.find({});
+    res.json({ success: true, appointments: appointmentsAdmin });
+  } catch (error) {
+    console.error(error);
+    res.json({ success: false, message: error.message });
+  }
+};
+
+/*-------- API for Appointment Cancellation --------*/
+const appointmentCancel = async (req, res) => {
+  try {
+    const { appointmentId } = req.body;
+
+    const appointmentData = await appointmentModel.findById(appointmentId);
+
+    await appointmentModel.findByIdAndUpdate(appointmentId, {
+      cancelled: true,
+    });
+
+    /*-------- Releasing Doctor Slot --------*/
+    const { docId, slotDate, slotTime } = appointmentData;
+
+    const docData = await doctorModel.findById(docId);
+
+    let slots_booked = docData.slots_booked;
+
+    slots_booked[slotDate] = slots_booked[slotDate].filter(
+      (e) => e !== slotTime
+    );
+
+    await doctorModel.findByIdAndUpdate(docId, { slots_booked });
+
+    res.json({ success: true, message: "Appointment Cancelled" });
+  } catch (error) {
+    console.log(error);
+    res.json({ success: false, message: error.message });
+  }
+};
+
+export { addDoctor, loginAdmin, allDoctors, appointmentsAdmin, appointmentCancel };
