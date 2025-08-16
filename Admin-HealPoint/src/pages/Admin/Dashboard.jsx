@@ -42,7 +42,7 @@ const Dashboard = () => {
 
             <div>
               <p className="text-xl font-semibold text-gray-600">
-                {dashData.patients}
+                {dashData.appointments}
               </p>
               <p className="text-gray-400">Appointments</p>
             </div>
@@ -67,7 +67,6 @@ const Dashboard = () => {
             className="flex items-center gap-2.5
            px-4 py-4 mt-10 rounded-t border border-gray-300"
           >
-            {/* <img src={assets.list_icon} alt="" /> */}
             <i className="fa-solid fa-list"></i>
             <p className="font-semibold">Latest Bookings</p>
           </div>
