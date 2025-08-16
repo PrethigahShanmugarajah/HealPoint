@@ -33,7 +33,7 @@ const Sidebar = () => {
             to={"/all-appointments"}
           >
             <i className="bi bi-calendar3 text-black text-xl"></i>
-            <p>Appointments</p>
+            <p className="hidden md:block">Appointments</p>
           </NavLink>
 
           <NavLink
@@ -45,7 +45,7 @@ const Sidebar = () => {
             to={"/add-doctor"}
           >
             <i className="bi bi-plus-square text-black text-xl"></i>
-            <p>Add Doctor</p>
+            <p className="hidden md:block">Add Doctor</p>
           </NavLink>
 
           <NavLink
@@ -57,7 +57,7 @@ const Sidebar = () => {
             to={"/doctor-list"}
           >
             <i className="bi bi-people-fill text-black text-2xl"></i>
-            <p>Doctors List</p>
+            <p className="hidden md:block">Doctors List</p>
           </NavLink>
         </ul>
       )}
@@ -73,7 +73,7 @@ const Sidebar = () => {
             to={"/doctor-dashboard"}
           >
             <i className="bi bi-house text-black text-2xl"></i>
-            <p>Dashboard</p>
+            <p className="hidden md:block">Dashboard</p>
           </NavLink>
 
           <NavLink
@@ -85,7 +85,7 @@ const Sidebar = () => {
             to={"/doctor-appointments"}
           >
             <i className="bi bi-calendar3 text-black text-xl"></i>
-            <p>Appointments</p>
+            <p className="hidden md:block">Appointments</p>
           </NavLink>
 
           <NavLink
@@ -97,7 +97,7 @@ const Sidebar = () => {
             to={"/doctor-profile"}
           >
             <i className="bi bi-person-lines-fill text-black text-2xl"></i>
-            <p>Profile</p>
+            <p className="hidden md:block">Profile</p>
           </NavLink>
         </ul>
       )}

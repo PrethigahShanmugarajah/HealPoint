@@ -12,7 +12,14 @@ const NavBar = () => {
     navigate ('/')
     aToken && setAToken ('')
     aToken && localStorage.removeItem("aToken");
-  } 
+  }
+
+//   const logout = () => {
+//   navigate('/');
+//   aToken && setAToken('');
+//   aToken && localStorage.removeItem("aToken");
+//   localStorage.removeItem("dToken"); // <-- Add this line
+// }
 
   return (
     <div className="flex justify-between items-center px-4 sm:px-10 py-3 border-b bg-white border-gray-200">
