@@ -116,34 +116,32 @@ const doctorDashboard = async (req, res) => {
   try {
     const { docId } = req.body;
 
-    const appointments = await appointmentModel.find({docId})
+    const appointments = await appointmentModel.find({ docId });
 
-    let earnings = 0
+    let earnings = 0;
 
-    appointments.map((item)=>{
+    appointments.map((item) => {
       if (item.isCompleted) {
         earnings += item.amount;
-        
       }
-    })
+    });
 
-    let patients = []
+    let patients = [];
 
-    appointments.map((item)=>{
+    appointments.map((item) => {
       if (!patients.includes(item.userId)) {
-        patients.push(item.userId)
+        patients.push(item.userId);
       }
-    })
+    });
 
     const dashData = {
       earnings,
       appointments: appointments.length,
       patients: patients.length,
       latestAppointments: appointments.reverse().slice(0, 5),
-    }
+    };
 
     res.json({ success: true, dashData });
-
   } catch (error) {
     console.error(error);
     res.json({ success: false, message: error.message });
