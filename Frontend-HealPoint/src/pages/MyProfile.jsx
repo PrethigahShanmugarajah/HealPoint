@@ -14,31 +14,35 @@ const MyProfile = () => {
 
   const updateUserProfileData = async () => {
     try {
-      const formData = new FormData()
+      const formData = new FormData();
 
-      formData.append('name', userData.name)
-      formData.append('phone',userData.phone)
-      formData.append('address',JSON.stringify(userData.address))
-      formData.append('gender',userData.gender)
-      formData.append('dob',userData.dob)
+      formData.append("name", userData.name);
+      formData.append("phone", userData.phone);
+      formData.append("address", JSON.stringify(userData.address));
+      formData.append("gender", userData.gender);
+      formData.append("dob", userData.dob);
 
-      image && formData.append('image',image)
+      image && formData.append("image", image);
 
-      const {data} = await axios.post(backendUrl + '/api/user/update-profile',formData,{headers:{token}})
+      const { data } = await axios.post(
+        backendUrl + "/api/user/update-profile",
+        formData,
+        { headers: { token } }
+      );
 
       if (data.success) {
-        toast.success(data.message)
-        loadUserProfileData()
-        setIsEdit(false)
-        setImage(false)
-        console.log(data.message)
+        toast.success(data.message);
+        loadUserProfileData();
+        setIsEdit(false);
+        setImage(false);
+        console.log(data.message);
       } else {
-        toast.error(data.message)
-        console.log(data.message)
+        toast.error(data.message);
+        console.log(data.message);
       }
     } catch (error) {
-      toast.error(error.message)
-      console.log(error)
+      toast.error(error.message);
+      console.log(error);
     }
   };
 
@@ -54,18 +58,11 @@ const MyProfile = () => {
                 alt=""
               />
 
-              {/* <img
-                className="w-10 absolute bottom-12 right-12"
-                src={image ? "" : assets.upload_icon}
-                alt=""
-              /> */}
-
               {!image && (
                 <div className="absolute inset-0 flex items-center justify-center rounded pointer-events-none">
                   <i className="bi bi-file-arrow-up-fill text-white text-3xl drop-shadow-lg"></i>
                 </div>
               )}
-
             </div>
 
             <input
@@ -125,15 +122,10 @@ const MyProfile = () => {
                   onChange={(e) =>
                     setUserData((prev) => ({
                       ...prev,
-                      // address: { ...prev.address, line1: e.target.value },
-                      address: JSON.stringify({
-                        ...JSON.parse(prev.address),
-                        line1: e.target.value,
-                      }),
+                      address: { ...prev.address, line1: e.target.value },
                     }))
                   }
-                  // value={userData.address.line1}
-                  value={JSON.parse(userData.address).line1}
+                  value={userData.address.line1}
                   type="text"
                 />
                 <br />
@@ -142,25 +134,18 @@ const MyProfile = () => {
                   onChange={(e) =>
                     setUserData((prev) => ({
                       ...prev,
-                      // address: { ...prev.address, line2: e.target.value },
-                      address: JSON.stringify({
-                        ...JSON.parse(prev.address),
-                        line2: e.target.value,
-                      }),
+                      address: { ...prev.address, line2: e.target.value },
                     }))
                   }
-                  // value={userData.address.line2}
-                  value={JSON.parse(userData.address).line2}
+                  value={userData.address.line2}
                   type="text"
                 />
               </p>
             ) : (
               <p className="text-gray-500">
-                {/* {userData.address.line1} */}
-                {JSON.parse(userData.address).line1}
+                {userData.address.line1}
                 <br />
-                {/* {userData.address.line2} */}
-                {JSON.parse(userData.address).line2}
+                {userData.address.line2}
               </p>
             )}
           </div>

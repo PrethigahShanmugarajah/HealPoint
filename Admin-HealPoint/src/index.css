@@ -34,6 +34,9 @@
   border-color: var(--color-primary);
 }
 
+.bg-primary-80 {
+  background-color: rgb(236 72 153 / 0.8);
+}
 .group:hover .group-hover\:bg-primary {
   background-color: var(--color-primary);
 }

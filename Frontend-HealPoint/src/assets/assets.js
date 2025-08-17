@@ -5,10 +5,6 @@ import Profile_Picture from "./Profile_Picture.png";
 import Contact_Image from "./Contact_Image.png";
 import About_Image from "./About_Image.png";
 import Logo from "./Logo.png";
-import chats_icon from "./chats_icon.svg";
-import upload_icon from "./upload_icon.png";
-import stripe_logo from "./stripe_logo.png";
-import razorpay_logo from "./razorpay_logo.png";
 
 import Doctor_1 from "./Doctor_1.png";
 import Doctor_2 from "./Doctor_2.png";
@@ -67,13 +63,9 @@ export const assets = {
   Header_Image,
   Group_Profiles,
   Logo,
-  chats_icon,
   Profile_Picture,
   Contact_Image,
   About_Image,
-  upload_icon,
-  stripe_logo,
-  razorpay_logo,
 };
 
 export const specialityData = [

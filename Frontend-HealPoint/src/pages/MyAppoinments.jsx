@@ -1,6 +1,5 @@
 import React, { useContext } from "react";
 import { AppContext } from "../context/AppContext";
-import { assets } from "../assets/assets";
 import { useState } from "react";
 import { toast } from "react-toastify";
 import { useEffect } from "react";
@@ -129,7 +128,16 @@ const MyAppoinments = () => {
             <div></div>
 
             <div className="flex flex-col gap-2 justify-end">
-              {!item.cancelled && (
+
+              {!item.cancelled && item.payment && !item.isCompleted && (
+                <button
+                  className="sm:min-w-48 py-2 border rounded text-stone-500 bg-pink-50"
+                >
+                  Paid
+                </button>
+              )}
+
+              {!item.cancelled && !item.payment && !item.isCompleted && (
                 <button
                   onClick={() => appointmentStripe(item._id)}
                   className="text-sm text-stone-500 text-center sm:min-w-48 py-2 border rounded hover:bg-primary hover:text-white transition-all duration-300 hover:cursor-pointer"
@@ -138,7 +146,7 @@ const MyAppoinments = () => {
                 </button>
               )}
 
-              {!item.cancelled && (
+              {!item.cancelled && !item.isCompleted && (
                 <button
                   onClick={() => cancelAppointment(item._id)}
                   className="text-sm text-stone-500 text-center sm:min-w-48 py-2 border rounded hover:bg-red-700 hover:text-white transition-all duration-300 hover:cursor-pointer"
@@ -147,12 +155,20 @@ const MyAppoinments = () => {
                 </button>
               )}
 
-              {item.cancelled && (
+              {item.cancelled && !item.isCompleted && (
                 <button className="sm:min-w-48 py-2 border border-red-700 rounded text-red-700">
                   {" "}
                   Appointment Cancelled
                 </button>
               )}
+
+              {
+                item.isCompleted && (
+                  <button className="sm:min-w-48 py-2 border border-green-700 rounded text-green-700">
+                    Appointment Completed
+                  </button>
+                )
+              }
             </div>
           </div>
         ))}

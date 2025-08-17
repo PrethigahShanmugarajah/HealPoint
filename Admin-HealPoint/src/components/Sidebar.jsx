@@ -21,7 +21,7 @@ const Sidebar = () => {
             to={"/admin-dashboard"}
           >
             <i className="bi bi-house text-black text-2xl"></i>
-            <p>Dashboard</p>
+            <p className="hidden md:block">Dashboard</p>
           </NavLink>
 
           <NavLink
