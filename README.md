@@ -98,7 +98,7 @@ This project is based on the YouTube tutorial:
 
 ## Project Link
 
-[GitHub Repository](https://github.com/PrethigahShanmugarajah)
+[GitHub Repository](https://github.com/PrethigahShanmugarajah/HealPoint)
 
 ---
 

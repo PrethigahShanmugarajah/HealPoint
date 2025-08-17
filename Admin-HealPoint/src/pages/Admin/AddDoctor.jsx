@@ -66,13 +66,12 @@ const AddDoctor = () => {
         setAddress1("");
         setAddress2("");
         setAbout("");
-
       } else {
         toast.error(data.message);
       }
     } catch (error) {
-      toast.error(error.message)
-      console.log(error)
+      toast.error(error.message);
+      console.log(error);
     }
   };
 
@@ -169,6 +168,11 @@ const AddDoctor = () => {
                 <option value="13 Year">13 Year</option>
                 <option value="14 Year">14 Year</option>
                 <option value="15 Year">15 Year</option>
+                <option value="16 Year">16 Year</option>
+                <option value="17 Year">17 Year</option>
+                <option value="18 Year">18 Year</option>
+                <option value="19 Year">19 Year</option>
+                <option value="20 Year">20 Year</option>
               </select>
             </div>
 

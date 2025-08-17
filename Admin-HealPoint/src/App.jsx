@@ -26,23 +26,21 @@ const App = () => {
       <NavBar />
 
       <div className="flex items-start">
-        <Sidebar/>
+        <Sidebar />
         <Routes>
           {/*-------- Admin Route --------*/}
           <Route path="/" element={<></>} />
-          <Route path="/admin-dashboard" element={<Dashboard/>} />
-          <Route path="/all-appointments" element={<AllAppointments/>} />
-          <Route path="/add-doctor" element={<AddDoctor/>} />
-          <Route path="/doctor-list" element={<DoctorList/>} />
+          <Route path="/admin-dashboard" element={<Dashboard />} />
+          <Route path="/all-appointments" element={<AllAppointments />} />
+          <Route path="/add-doctor" element={<AddDoctor />} />
+          <Route path="/doctor-list" element={<DoctorList />} />
 
           {/*-------- Doctor Route --------*/}
           <Route path="/doctor-dashboard" element={<DoctorDashboard />} />
           <Route path="/doctor-profile" element={<DoctorProfile />} />
           <Route path="/doctor-appointments" element={<DoctorAppointments />} />
-
         </Routes>
       </div>
-
     </div>
   ) : (
     <>

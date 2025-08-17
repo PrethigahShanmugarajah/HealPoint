@@ -84,7 +84,6 @@ const DoctorAppointments = () => {
                 ></i>
               </div>
             )}
-            
           </div>
         ))}
       </div>
