@@ -1,4 +1,3 @@
-```markdown
 # 🩺 Full Stack Doctor Appointment Booking System (MERN Stack)
 
 [![React](https://img.shields.io/badge/React-17.0.2-blue?logo=react)](https://reactjs.org/)
@@ -43,11 +42,9 @@ A Full Stack Doctor Appointment Booking System built with React.js, Node.js, Exp
 ## Folder Structure
 
 ```
-
 Frontend-HealPoint/
 Backend-HealPoint/
 Admin-HealPoint/
-
 ````
 
 ---
@@ -110,6 +107,3 @@ This project is based on the YouTube tutorial:
 **Prethigah Shanmugarajah**
 Department of Software Engineering, Faculty of Computing
 Sabaragamuwa University of Sri Lanka
-
-```
-```
